@@ -1,17 +1,19 @@
 "use client"
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname, } from "next/navigation";
 
 
 
 const api_key = "3121e81a9d9edade04ccdb1e7508f35e";
 
 function page() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [search, setSearch] = useState("Believe");
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const pathname = usePathname();
   console.log(pathname)
 
