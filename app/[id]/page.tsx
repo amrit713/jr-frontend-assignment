@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client"
 import  { useState, useEffect } from "react";
 import Image from "next/image";
@@ -28,6 +29,7 @@ function page() {
     return data;
   }
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {}, [search]);
 
   const { data, isLoading, isFetching, error } = useQuery(
