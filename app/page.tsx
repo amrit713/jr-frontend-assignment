@@ -13,7 +13,7 @@ const user_name = "amrit_ghimire";
 export default function Home({}) {
   const [search, setSearch] = useState("Believe");
 
-  async function getMusic(query) {
+  async function getMusic(query: string) {
     const { data } = await axios.get(
       `http://ws.audioscrobbler.com/2.0/?method=album.search&album=${query}&api_key=${api_key}&format=json`
     );
