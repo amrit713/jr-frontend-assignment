@@ -18,7 +18,7 @@ const Music: FC<MusicProps> = ({ music }) => {
           layout="fill"
           objectFit="cover"
           priority
-          onError={(e) =>
+          onError={(e:any) =>
             (e.target.src =
               "https://is2-ssl.mzstatic.com/image/thumb/Features125/v4/fa/f7/54/faf7540e-3346-b548-55d8-8617ce707554/dj.hbpmuqwc.jpg/400x400cc.jpg")
           }
